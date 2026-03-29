@@ -1,0 +1,21 @@
+{
+    "name": "@playablebyme/tsdown-config",
+    "private": true,
+    "type": "module",
+    "exports": {
+        ".": "./index.ts"
+    },
+    "scripts": {
+        "lint": "oxlint --type-aware index.ts",
+        "format": "oxfmt --write index.ts",
+        "format:check": "oxfmt --check index.ts"
+    },
+    "devDependencies": {
+        "oxfmt": "^0.42.0",
+        "oxlint": "^1.57.0",
+        "tsdown": "^0.21.7"
+    },
+    "peerDependencies": {
+        "tsdown": "^0.21.7"
+    }
+}

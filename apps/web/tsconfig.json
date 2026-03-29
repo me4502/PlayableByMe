@@ -1,0 +1,13 @@
+{
+    "extends": [
+        "@playablebyme/tsconfig/tsconfig.base.json",
+        "@playablebyme/tsconfig/tsconfig.bundler.json"
+    ],
+    "compilerOptions": {
+        "jsx": "preserve",
+        "noEmit": true,
+        "plugins": [{ "name": "next" }]
+    },
+    "include": ["**/*", ".next/types/**/*"],
+    "exclude": ["node_modules"]
+}

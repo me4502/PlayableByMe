@@ -1,0 +1,11 @@
+{
+    "extends": [
+        "@playablebyme/tsconfig/tsconfig.base.json",
+        "@playablebyme/tsconfig/tsconfig.node-app.json"
+    ],
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist"
+    },
+    "include": ["src"]
+}

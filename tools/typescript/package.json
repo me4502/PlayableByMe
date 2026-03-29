@@ -1,0 +1,20 @@
+{
+    "name": "@playablebyme/tsconfig",
+    "private": true,
+    "type": "module",
+    "exports": {
+        "./tsconfig.base.json": "./tsconfig.base.json",
+        "./tsconfig.node-app.json": "./tsconfig.node-app.json",
+        "./tsconfig.bundler.json": "./tsconfig.bundler.json"
+    },
+    "scripts": {
+        "format": "oxfmt --write tsconfig*.json",
+        "format:check": "oxfmt --check tsconfig*.json"
+    },
+    "devDependencies": {
+        "oxfmt": "^0.42.0"
+    },
+    "peerDependencies": {
+        "typescript": "^6.0.2"
+    }
+}

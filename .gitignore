@@ -1,0 +1,16 @@
+node_modules/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.next/
+.turbo/
+dist/
+coverage/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example

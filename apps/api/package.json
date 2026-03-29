@@ -1,0 +1,16 @@
+{
+    "name": "@playablebyme/api",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "node --watch src/index.ts",
+        "lint": "oxlint --type-aware src",
+        "format": "oxfmt --write src",
+        "format:check": "oxfmt --check src"
+    },
+    "devDependencies": {
+        "@playablebyme/tsconfig": "workspace:*",
+        "oxfmt": "^0.42.0",
+        "oxlint": "^1.57.0"
+    }
+}

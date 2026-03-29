@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "@playablebyme/tsconfig/tsconfig.base.json",
+        "@playablebyme/tsconfig/tsconfig.bundler.json"
+    ],
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "isolatedDeclarations": false
+    },
+    "include": ["src"]
+}

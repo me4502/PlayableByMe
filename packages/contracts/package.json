@@ -1,0 +1,29 @@
+{
+    "name": "@playablebyme/contracts",
+    "private": true,
+    "files": [
+        "dist"
+    ],
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
+    },
+    "scripts": {
+        "build": "yarn tsdown",
+        "lint": "oxlint --type-aware src tsdown.config.ts",
+        "format": "oxfmt --write src tsdown.config.ts",
+        "format:check": "oxfmt --check src tsdown.config.ts"
+    },
+    "devDependencies": {
+        "@playablebyme/tsconfig": "workspace:*",
+        "@playablebyme/tsdown-config": "workspace:*",
+        "oxfmt": "^0.42.0",
+        "oxlint": "^1.57.0",
+        "tsdown": "^0.21.7"
+    }
+}
